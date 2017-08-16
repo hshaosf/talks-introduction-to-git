@@ -1,1 +1,141 @@
-Hello
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to Git</title>
+
+		<meta name="description" content="Introduction to Git">
+		<meta name="author" content="Hui Shao">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/talk.css">
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-5LB8RDN');
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		
+	</head>
+
+	<body class="talk">
+
+		<div class="reveal" id="git">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides" >
+				<section>					
+					<h2>Introduction to Git</h2>
+					<h2 class="fragment blink"><i class="fa fa-thumbs-up fa-3x"></i></h2>
+				</section>
+
+				<section>
+					<section>
+						<h2>Version Control. <span class="fragment">Why?</span></h2>
+					</section>
+					
+					<section>
+						<ul>
+						<li>revert files back to a previous state</li>
+						<li class="fragment">revert the entire project back to a previous state</li>
+						<li class="fragment">compare changes over time</li>
+						<li class="fragment">see who last modified something</li>
+						</ul>
+					</section>
+				</section>				
+
+				<section>
+					<section>
+						<h2>Getting started</h2>
+					</section>
+					<section>
+						<h2>create a new repository</h2>
+						<h2><pre><code>$ git init</code></pre></h2>
+					</section>
+					<section>
+						<h2>checkout a repository</h2>
+						<h2><pre><code>$ git clone 
+  username@host:/path/to/repo</code></pre></h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Workflow</h2>
+						<p><img src="images/trees.png" alt="Workflow" /></p>
+						<p class="fragment col-4">Working Directory</p> 
+						<p class="fragment col-4">Staging</p> 
+						<p class="fragment col-4">Repo</p>
+						</p>
+					</section>
+					<section>
+						<h2>add</h2>
+						<p>add file(s) from working directory to staging</p>
+						<h2><pre><code>$ git add &lt;filename&gt;</code></pre></h2>
+						<h2><pre><code>$ git add *</code></pre></h2>						
+					</section>
+					<section>
+						<h2>commit</h2>
+						<p>commit file(s) from staging to local repository
+						<h2><pre><code>$ git commit -m "Commit message"</code></pre></h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>pushing changes</h2>
+						<p>push changes to remote repository</p>
+						<h2><pre><code>$ git push origin master</code></pre></h2>
+					</section>
+					<section>
+					<p><img src="images/Progress.png" alt="progress" /></p>
+					<p><small>Photo <a href="https://blog.openshift.com/wp-content/uploads/imported/Progress.png" target="_blank">OpenShift</a></small>
+					</section>
+				</section>
+
+				<section style="text-align:left;">
+					<h2>Credits</h2>
+					<ul>
+					<li>https://git-scm.com/book/en/v2</li>
+					<li>http://rogerdudler.github.io/git-guide/</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>DEMO + Q&amp;A</h1>
+				</section>
+
+			</div>
+
+		</div>
+		<p class="credit">
+			<a href="https://hshaosf.github.io/talks-introduction-to-git/" target="_blank">https://hshaosf.github.io/talks-introduction-to-git/</a>
+		</p>
+		<script src="lib/js/head.min.js"></script>
+		<script>head.load("js/reveal.js", "lib/js/jquery.min.js", "js/talk.js");</script>
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LB8RDN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	</body>
+</html>

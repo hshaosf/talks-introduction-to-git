@@ -49,12 +49,19 @@
 			<div class="slides" >
 				<section>					
 					<h2>Introduction to Git</h2>
-					<h2 class="fragment blink"><i class="fa fa-thumbs-up fa-3x"></i></h2>
+					<h2 class="fragment blink"><i class="fa fa-play"></i></h2>
+				</section>
+
+				<section>
+					<h2>Git? <span class="fragment">Github?</span></h2>
+					<h3><span class="fragment">Same?</span> <span class="fragment">Different?</span></h3>
+					<p class="fragment" style="text-align:left"><strong><a href="https://en.wikipedia.org/wiki/Git" target="_blank">Git</a></strong> is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. ~wikipedia</p>
+					<p class="fragment" style="text-align:left"><strong><a href="https://en.wikipedia.org/wiki/GitHub" target="_blank">GitHub</a></strong> is a web-based Git...It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. ~wikipedia</p>
 				</section>
 
 				<section>
 					<section>
-						<h2>Version Control. <span class="fragment">Why?</span></h2>
+						<h2>Version Control? <span class="fragment">Why?</span></h2>
 					</section>
 					
 					<section>
@@ -63,6 +70,7 @@
 						<li class="fragment">revert the entire project back to a previous state</li>
 						<li class="fragment">compare changes over time</li>
 						<li class="fragment">see who last modified something</li>
+						<li class="fragment">backup files</li>
 						</ul>
 					</section>
 				</section>				
@@ -92,13 +100,13 @@
 						</p>
 					</section>
 					<section>
-						<h2>add</h2>
+						<h2>Add</h2>
 						<p>add file(s) from working directory to staging</p>
 						<h2><pre><code>$ git add &lt;filename&gt;</code></pre></h2>
 						<h2><pre><code>$ git add *</code></pre></h2>						
 					</section>
 					<section>
-						<h2>commit</h2>
+						<h2>Commit</h2>
 						<p>commit file(s) from staging to local repository
 						<h2><pre><code>$ git commit -m "Commit message"</code></pre></h2>
 					</section>
@@ -106,26 +114,67 @@
 
 				<section>
 					<section>
-						<h2>pushing changes</h2>
+						<h2>Pushing changes</h2>
 						<p>push changes to remote repository</p>
 						<h2><pre><code>$ git push origin master</code></pre></h2>
 					</section>
 					<section>
-					<p><img src="images/Progress.png" alt="progress" /></p>
-					<p><small>Photo <a href="https://blog.openshift.com/wp-content/uploads/imported/Progress.png" target="_blank">OpenShift</a></small>
+						<p><img src="images/Progress.png" alt="progress" /></p>
+						<p><small>Photo <a href="https://blog.openshift.com/wp-content/uploads/imported/Progress.png" target="_blank">openshift.com</a></small></p>
 					</section>
 				</section>
 
-				<section style="text-align:left;">
-					<h2>Credits</h2>
-					<ul>
-					<li>https://git-scm.com/book/en/v2</li>
-					<li>http://rogerdudler.github.io/git-guide/</li>
-					</ul>
+				<section>
+					<section>
+						<h2>Branching</h2>
+						<p>used to develop features isolated from each other</p>
+						<p><img src="images/branches.png" alt="branches" /></p>
+						<h2><pre><code>$ git checkout -b feature_x</code></pre></h2>
+					</section>
+					<section>
+						<h2>Coding</h2>
+						<img src="images/coding.jpg" alt="coding" />
+						<p><small>Photo <a href="http://www.scitexas.edu/wp-content/uploads/2015/10/medical-coding-specialist.jpg" target="_blank">scitexas.edu</a></small></p>
+					</section>
 				</section>
 
 				<section>
-					<h1>DEMO + Q&amp;A</h1>
+					<section>
+						<h2>update</h2>
+						<h2><pre><code>$ git pull</code></pre></h2>
+						<h2>merge</h2>
+						<h2><pre><code>$ git merge &lt;branch&gt;</code></pre></h2>
+					</section>
+					<section data-transition="slide-in fade-out">
+						<h2>merge conflicts</h2>
+						<span>
+							<img src="images/merge_conflict_1.png" alt="merge" />
+						</span>
+					</section>
+					<section data-transition="fade-in slide-out">
+						<h2>merge conflicts resolved</h2>
+						<span>
+							<img src="images/merge_conflict_2.png" alt="merged" />
+						</span>
+					</section>
+				</section>
+
+				<section>
+					<p>
+					<img src="images/branches_sample.png" alt="branches sample" />
+					</p>
+					<p><small>Photo <a href="https://camo.githubusercontent.com/24c10f4b548816935b7145b77d205458255eb0bd/68747470733a2f2f7261772e6769746875622e636f6d2f637263382f47697456657273696f6e547265652f6d61737465722f73616d706c655f6769746b2e706e67" target="_blank">githubusercontent.com</a></small></p>
+				</section>
+
+				<section style="text-align:left;">
+					<h2>Credits and Sources</h2>
+					<ul>
+					<li><a href="https://en.wikipedia.org" target="_blank">https://en.wikipedia.org</a></li>
+					<li><a href="https://git-scm.com/book/en/v2" target="_blank">https://git-scm.com/book/en/v2</a></li>
+					<li><a href="http://rogerdudler.github.io/git-guide/" target="_blank">http://rogerdudler.github.io/git-guide/</a></li>
+					<li><a href="https://www.grandcircus.co/blog/resolving-git-conflicts/" target="_blank">https://www.grandcircus.co/blog/resolving-git-conflicts/</a></li>
+					<li><a href="https://www.lynda.com/GitHub-tutorials/GitHub-Web-Designers/162276-2.html" target="_blank">https://www.lynda.com/GitHub-tutorials/GitHub-Web-Designers/162276-2.html</a></li>
+					</ul>
 				</section>
 
 			</div>
